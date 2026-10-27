@@ -1,0 +1,4 @@
+name: e2_learning_curves
+methods: [ppo, ppo_lagrangian, ppo_residual, ppo_residual_lagrangian]
+seeds: 10
+purpose: Sample-efficiency curves from E1 policies

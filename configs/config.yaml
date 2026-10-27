@@ -1,0 +1,21 @@
+defaults:
+  - env: rigid
+  - agent: ppo
+  - experiment: e0
+  - _self_
+
+seed: 0
+profile: development_smoke
+frozen_research_config: false
+simulator_version: development
+training:
+  environments: 2
+  rollout_steps: 4
+  steps: 32
+  output: outputs/development
+  replay_capacity: 10000
+tuning:
+  trials: 1
+  steps_per_trial: 16
+  environments: 1
+  use_evaluation_sim: false

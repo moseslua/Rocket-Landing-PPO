@@ -1,0 +1,5 @@
+name: e3_constraints
+methods: [ppo, ppo_lagrangian, ppo_residual, ppo_residual_lagrangian]
+penalty_weights: [0.1, 1.0, 10.0, 100.0]
+seeds: 5
+purpose: Constraint-handling comparison

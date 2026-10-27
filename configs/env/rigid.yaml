@@ -1,0 +1,10 @@
+name: rigid_6dof
+timeout: 60.0
+difficulty: 0.1
+domain_randomization: true
+observation_noise: 0.0
+delay: 0.0
+penalty: 0.0
+bounds: 1500.0
+max_altitude: 5000.0
+shaping: true

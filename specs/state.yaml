@@ -1,0 +1,40 @@
+environment:
+  python: 3.11.16
+  package_manager: uv 0.12.13
+  dependency_lock: uv.lock
+  local_platform: macOS arm64
+  jax_backend: cpu
+  nvidia_gpu_detected: false
+  offline_wandb_example: .env.example
+verification:
+  lint: passed
+  tests: 56 passed
+  numerical_stack_smoke: passed
+  lunar_lander_transition_smoke: passed
+status:
+  environment_setup: complete
+  simulators: ideal_3dof_and_6dof_development_jax_scipy
+  six_dof_and_high_fidelity_effects: development_models_not_validated
+  full_learning_environment: development_implemented_with_documented_limits
+  physics_and_event_tests: passed
+  prototype_reference_methods: [RK45, DOP853]
+  wheel_imports_outside_repository: passed
+  agents_and_controllers: ppo_pid_lagrangian_sac_guidance_development
+  research_gates_passed: []
+  cuda_environment_verified: false
+  optional_cvxpygen: unavailable_on_current_macos_sdk
+  docker_verified: false
+  docker_blocker: daemon_not_running
+  residual_baseline: jax_feedback_not_cvxpy_b0
+  large_scale_training: not_run
+  external_physics_validation: not_done
+  complete_e5_and_stress_backends: not_done
+prototype_benchmark:
+  kind: developer_numerical_only_not_training
+  command: make benchmark ARGS="--environments 64 --steps 100 --repeats 3 --seed 0"
+  local_receipt: results/prototype-bb4ef313189d405294a1fe6fe46c46ee.json
+  policy_transitions_per_second_approx: 210234
+  environments: 64
+  policy_steps: 100
+  repeats: 3
+  final_reference_solver_selection: deferred

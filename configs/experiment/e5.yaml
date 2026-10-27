@@ -1,0 +1,6 @@
+name: e5_ablation
+methods: [ppo_residual_lagrangian]
+seeds: 5
+ablations: [no_shaping, no_curriculum, no_domain_randomization, no_privileged_critic, no_history, residual_scale]
+residual_scales: [0.05, 0.1, 0.2, 0.5]
+purpose: Mechanism ablations

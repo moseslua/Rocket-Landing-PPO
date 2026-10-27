@@ -1,0 +1,5 @@
+name: point_mass_3dof
+timeout: 60.0
+difficulty: 1.0
+domain_randomization: true
+penalty: 0.0

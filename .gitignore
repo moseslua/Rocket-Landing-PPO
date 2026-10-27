@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.venv/
+.cache/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Experiment outputs
+wandb/
+checkpoints/
+outputs/
+results/*
+!results/.gitkeep
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
+
+# Local agent state
+.pi/
+.pi-glla/

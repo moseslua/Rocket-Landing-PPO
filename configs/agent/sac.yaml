@@ -1,0 +1,8 @@
+name: sac
+observation_size: 24
+action_size: 4
+gamma: 0.995
+tau: 0.005
+learning_rate: 0.0003
+batch_size: 8
+target_entropy: -4.0

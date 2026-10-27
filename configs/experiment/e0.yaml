@@ -1,0 +1,4 @@
+name: e0_pipeline
+methods: [ppo]
+seeds: 3
+purpose: End-to-end development pipeline smoke, not Gate G1

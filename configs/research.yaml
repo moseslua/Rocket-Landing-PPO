@@ -1,0 +1,28 @@
+defaults:
+  - override env: rigid
+  - override agent: ppo
+  - override experiment: e1
+  - _self_
+
+profile: frozen_candidate_not_gate_g4
+frozen_research_config: false
+seed: 0
+training:
+  environments: 4096
+  rollout_steps: 32
+  steps: 500000000
+  output: outputs/research
+  replay_capacity: 1000000
+agent:
+  width: 256
+  depth: 2
+  epochs: 5
+  minibatches: 8
+  learning_rate: 0.0003
+  anneal_learning_rate: true
+  total_steps: 500000000
+tuning:
+  trials: 30
+  steps_per_trial: 100000000
+  environments: 4096
+  use_evaluation_sim: false

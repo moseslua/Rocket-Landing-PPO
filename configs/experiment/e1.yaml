@@ -1,0 +1,4 @@
+name: e1_main
+methods: [b0, ppo, ppo_lagrangian, ppo_residual, ppo_residual_lagrangian]
+seeds: 10
+purpose: Main Sim-T/Sim-E comparison (not executed by development smoke)

@@ -1,0 +1,18 @@
+name: ppo
+residual: true
+residual_scale: 0.2
+baseline_backend: jax_feedback
+observation_size: 24
+privileged_size: 24
+action_size: 4
+width: 64
+depth: 2
+learning_rate: 0.0003
+gamma: 0.995
+gae_lambda: 0.95
+clip: 0.2
+epochs: 1
+minibatches: 2
+constrained: false
+budgets: [0.01, 0.01, 0.01]
+total_steps: 1000

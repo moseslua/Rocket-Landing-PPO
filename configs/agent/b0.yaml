@@ -1,0 +1,4 @@
+name: b0
+horizon: 12
+dt: 0.2
+max_thrust: 36000.0
